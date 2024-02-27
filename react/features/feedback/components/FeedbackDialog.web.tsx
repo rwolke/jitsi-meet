@@ -288,9 +288,9 @@ const FeedbackDialog = ({ conference, onClose, title }: IProps) => {
             ok = {{
                 translationKey: 'dialog.Submit'
             }}
-            disableEnter = true
             onCancel = { onCancel }
             onSubmit = { _onSubmit }
+            disableEnter = true
             size = 'large'
             titleKey = 'feedback.rateExperience'>
             <div className = { classes.dialog }>
