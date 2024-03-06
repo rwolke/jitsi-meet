@@ -288,7 +288,7 @@ const FeedbackDialog = ({ conference, onClose, title }: IProps) => {
             ok = {{
                 translationKey: 'dialog.Submit'
             }}
-            disableEnter = true
+            disableEnter = { true }
             onCancel = { onCancel }
             onSubmit = { _onSubmit }
             size = 'large'
