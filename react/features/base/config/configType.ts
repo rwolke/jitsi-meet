@@ -1,40 +1,4 @@
-export type ToolbarButton = 'camera' |
-    'chat' |
-    'closedcaptions' |
-    'desktop' |
-    'download' |
-    'embedmeeting' |
-    'etherpad' |
-    'feedback' |
-    'filmstrip' |
-    'fullscreen' |
-    'hangup' |
-    'help' |
-    'highlight' |
-    'invite' |
-    'linktosalesforce' |
-    'livestreaming' |
-    'microphone' |
-    'mute-everyone' |
-    'mute-video-everyone' |
-    'noisesuppression' |
-    'participants-pane' |
-    'profile' |
-    'raisehand' |
-    'reactions' |
-    'recording' |
-    'security' |
-    'select-background' |
-    'settings' |
-    'shareaudio' |
-    'sharedvideo' |
-    'shortcuts' |
-    'stats' |
-    'tileview' |
-    'toggle-camera' |
-    'videoquality' |
-    'whiteboard' |
-    '__end';
+import { ToolbarButton } from '../../toolbox/types';
 
 type ButtonsWithNotifyClick = 'camera' |
     'chat' |
@@ -536,6 +500,7 @@ export interface IConfig {
         suggestRecording?: boolean;
     };
     remoteVideoMenu?: {
+        disableDemote?: boolean;
         disableGrantModerator?: boolean;
         disableKick?: boolean;
         disablePrivateChat?: boolean;
